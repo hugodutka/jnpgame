@@ -15,6 +15,11 @@ public class CameraController : MonoBehaviour
 
     private Vector3 m_Velocity;
 
+    public void SetTarget(Transform target)
+    {
+        m_Target = target;
+    }
+
     void Update()
     {
         if (m_Target == null)
