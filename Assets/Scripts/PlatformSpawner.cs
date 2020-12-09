@@ -64,8 +64,6 @@ public class PlatformSpawner : MonoBehaviour
         GameObject platformInstance = Instantiate(platformPrefab, transform.position, Quaternion.identity);
 
         m_SpawnedPlatforms.Add(platformInstance);
-
-        ResetToPosition(Vector3.zero, false);
     }
 
     public void ResetToPosition(Vector3 position, bool destroyAllPlatforms = true)
