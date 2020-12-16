@@ -10,7 +10,7 @@ public class Saw : MonoBehaviour
 
     private void Update()
     {
-        transform.position += m_Speed;
+        transform.position += m_Speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

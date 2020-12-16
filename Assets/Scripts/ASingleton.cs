@@ -26,6 +26,9 @@ public abstract class ASingleton<T> : MonoBehaviour where T : MonoBehaviour
         else
         {
             s_Instance = this as T;
+            Initialize();
         }
     }
+
+    protected abstract void Initialize();
 }

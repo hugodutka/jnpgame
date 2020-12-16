@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ForceModifier: 5000
-  m_Speed: {x: 0.01, y: 0, z: 0}
+  m_Speed: {x: 0.6, y: 0, z: 0}
 --- !u!114 &3973436051294840187
 MonoBehaviour:
   m_ObjectHideFlags: 0
