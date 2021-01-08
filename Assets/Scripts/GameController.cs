@@ -30,4 +30,15 @@ public class GameController : ASingleton<GameController>
     {
         Debug.LogError($"Loaded scene {loadedScene.name}");
     }
+
+    private bool m_Paused = false;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            m_Paused = !m_Paused;
+            Time.timeScale = m_Paused ? 0f : 1f;
+        }
+    }
 }

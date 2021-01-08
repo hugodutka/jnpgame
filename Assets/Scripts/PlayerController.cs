@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour
     {
         GetInput();
         UpdateAnimator();
+
+        HeightDeathCheck();
     }
 
     private void GetInput()
@@ -127,6 +129,17 @@ public class PlayerController : MonoBehaviour
     {
         m_FacingRight = !m_FacingRight;
         m_SpriteRenderer.flipX = !m_FacingRight;
+    }
+
+    [SerializeField]
+    private float m_DeathYThreshold = -10;
+
+    private void HeightDeathCheck()
+    {
+        if (transform.position.y <= m_DeathYThreshold)
+        {
+            Kill();
+        }
     }
 
     public void Kill()
