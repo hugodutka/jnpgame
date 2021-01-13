@@ -70,6 +70,8 @@ public class LevelController : MonoBehaviour
         {
             m_SawInstance.transform.position = m_SawSpawnPositionMarker.position;
         }
+
+        GameController.Instance.ResetPoints();
     }
 
     private IEnumerator RestartLevelCoroutine()
