@@ -72,6 +72,7 @@ public class LevelController : MonoBehaviour
         }
 
         GameController.Instance.ResetPoints();
+        GameController.Instance.ResetStartTime();
     }
 
     private IEnumerator RestartLevelCoroutine()

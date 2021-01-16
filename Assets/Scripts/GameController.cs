@@ -11,9 +11,16 @@ public class GameController : ASingleton<GameController>
 
     private ulong m_Points = 0;
 
+    private float m_StartTime = 0.0f;
+
     public void ResetPoints()
     {
         m_Points = 0;
+    }
+
+    public void ResetStartTime()
+    {
+        m_StartTime = Time.time;
     }
 
     public void HandleCoinPickedUp(Coin coin)
@@ -43,7 +50,7 @@ public class GameController : ASingleton<GameController>
 
     private void Update()
     {
-        MainInterfaceView.Configure(m_Points, Time.time);
+        MainInterfaceView.Configure(m_Points, Time.time - m_StartTime);
     }
 
     private void Pause()
