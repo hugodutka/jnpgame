@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ForceModifier: 5000
-  m_Speed: {x: 0.6, y: 0, z: 0}
+  m_Speed: {x: 4.25, y: 0, z: 0}
 --- !u!114 &3973436051294840187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b73aa13e793d443b434c93817ea733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationDelta: {x: 0, y: 0, z: 500}
+  RotationDelta: {x: 0, y: 0, z: 100}
 --- !u!1 &7988813635712318980
 GameObject:
   m_ObjectHideFlags: 0
