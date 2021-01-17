@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b73aa13e793d443b434c93817ea733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationDelta: {x: 1, y: 1, z: 1}
+  RotationDelta: {x: 20, y: 20, z: 20}
 --- !u!114 &7826845545854836582
 MonoBehaviour:
   m_ObjectHideFlags: 0
